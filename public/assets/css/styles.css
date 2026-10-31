@@ -1,0 +1,23 @@
+/* Student Management System: teal + crimson on warm stone */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { font-family: Manrope, system-ui, sans-serif; font-size: 15.5px; line-height: 1.7; -webkit-font-smoothing: antialiased; background: #fafaf9; color: #1c1917; }
+h1, h2, h3, h4 { font-family: Fraunces, Georgia, serif; line-height: 1.2; text-wrap: balance; }
+h1 { letter-spacing: -.02em; }
+h3 { letter-spacing: -.005em; }
+p { text-wrap: pretty; }
+.lead { font-size: 1.125rem; line-height: 1.75; color: #57534e; max-width: 62ch; }
+.prose-sm-text { font-size: .9375rem; color: #57534e; max-width: 65ch; }
+.text-gradient { background: linear-gradient(135deg, #0f766e 0%, #be123c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.bg-mesh { background-image: radial-gradient(at 20% 10%, rgba(15,118,110,.14) 0, transparent 50%), radial-gradient(at 90% 0%, rgba(190,18,60,.07) 0, transparent 45%); }
+.glow { box-shadow: 0 8px 24px rgba(15,118,110,.22); }
+details.menu-dropdown > summary { list-style: none; }
+details.menu-dropdown > summary::-webkit-details-marker { display: none; }
+@keyframes fade-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.animate-fade-in { animation: fade-in .55s ease-out both; }
+@media (prefers-reduced-motion: reduce) { .animate-fade-in { animation: none; } }
+.input-field { width: 100%; border-radius: .6rem; background: #fff; border: 1px solid #d6d3d1; padding: .7rem 1rem; font-size: .875rem; transition: border-color .15s, box-shadow .15s; }
+.input-field:focus { outline: none; border-color: #0f766e; box-shadow: 0 0 0 1px #0f766e; }
+.input-field::placeholder { color: #a8a29e; }
+.input-error { border-color: #be123c; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid #0f766e; outline-offset: 2px; }
