@@ -35,8 +35,8 @@
                 </details>
                 <!-- Blade: @endcan -->
                 <!-- Blade: @guest -->
-                <a href="login.html" class="block py-2 text-sm font-semibold text-brand lg:py-1">Sign In</a>
-                <a href="register.html" class="block rounded-lg bg-brand px-4 py-2 text-center text-sm font-semibold text-white hover:bg-brand-dark">Create Account</a>
+                <a href="{{ route('login') }}" class="block py-2 text-sm font-semibold text-brand lg:py-1">Sign In</a>
+                <a href="{{ route('register') }}" class="block rounded-lg bg-brand px-4 py-2 text-center text-sm font-semibold text-white hover:bg-brand-dark">Create Account</a>
                 <!-- Blade: @endguest -->
             </nav>
         </div>
