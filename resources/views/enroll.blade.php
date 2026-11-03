@@ -27,7 +27,7 @@
                                 <option>BUC3131 Advanced Web Application Development</option>
                                 <option>BUC3112 Mobile Application Development</option>
                                 <option>BIT2105 Object Oriented Programming</option>
-                                <option>BBA1101 Principles of Accounting</option>
+                                <option>BBA1101 App Development</option>
                                 <option>BUC3120 Business Law</option>
                             </select>
                         </div>
