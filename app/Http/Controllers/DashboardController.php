@@ -10,9 +10,14 @@ class DashboardController extends Controller
      * Display a listing of the resource.
      */
     public function dashboard()
-    {
-        return view('dashboard');
-    }
+{
+    $students = \App\Models\Student::count();
+    $courses = \App\Models\Course::count();
+    $registrations = \App\Models\Registration::count();
+    $users = \App\Models\User::count();
+
+    return view('dashboard', compact('students', 'courses', 'registrations', 'users'));
+}
 
     /**
      * Show the form for creating a new resource.
