@@ -60,16 +60,23 @@
 @if(session('error'))
     <p class="mb-4 rounded-lg bg-accent-soft px-4 py-2 text-sm text-accent">{{ session('error') }}</p>
 @endif
+@if($errors->any())
+    <ul class="mb-4 list-inside list-disc rounded-lg bg-accent-soft px-4 py-2 text-sm text-accent">
+        @foreach($errors->all() as $error)
+            <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+@endif
 
 <form class="space-y-4" method="POST" action="/register">
     @csrf
             <div>
                 <label class="mb-1 block text-sm font-semibold">Full name</label>
-                <input type="text" name="name" value="" placeholder="Okoit Samuel" class="input-field ">
+                <input type="text" name="name" value="" placeholder="Okoit Samuel" class="input-field " required>
             </div>
             <div>
                 <label class="mb-1 block text-sm font-semibold">University email</label>
-                <input type="email" name="email" value="" placeholder="2400719748@mubs.ac.ug" class="input-field ">
+                <input type="email" name="email" value="" placeholder="2400719748@mubs.ac.ug" class="input-field " required>
             </div>
 
             <div>
